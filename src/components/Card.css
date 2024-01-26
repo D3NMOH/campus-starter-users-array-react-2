@@ -3,17 +3,18 @@
   position: relative;
   width: 200px;
   border-radius: 12px;
-  box-shadow: #0000003d 0px 3px 8px;
-  transition: all 0.2s;
+  box-shadow: inset #000000 0px 0px 0, #0000003d 0px 3px 8px;
+  transition: all 0.1s;
   background-color: white;
   img {
     border-radius: 10px;
   }
 }
 .card:hover {
-  box-shadow: #000000 0px 3px 15px;
+  box-shadow: inset #000000 0px 0px 0, #000000 0px 3px 15px;
 }
 .card:active {
   scale: 0.98;
-  box-shadow: #0000003d 0px 0px 1px;
+  box-shadow: inset #000000 0px 8px 15px, black 0 0 0;
+  border: 1px 1px 1px 1px;
 }
