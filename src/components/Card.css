@@ -11,7 +11,7 @@
   }
 }
 .card:hover {
-  box-shadow: #0000003d 0px 3px 15px;
+  box-shadow: #000000 0px 3px 15px;
 }
 .card:active {
   scale: 0.98;
