@@ -6,7 +6,9 @@
   cursor: default;
   background-color: #7b7b7b;
 }
-
+* {
+  transition: ease 0.2s;
+}
 h1 {
   margin-bottom: 12px;
   color: #fff;
@@ -41,6 +43,20 @@ main {
   grid-template-areas:
     "filter filter filter sort sort sort"
     "filter filter filter sort sort sort";
+  border-image: linear-gradient(
+      to bottom,
+      #55000000,
+      #55000000,
+      #056400,
+      #056400,
+      #056400,
+      #056400,
+      #55000000,
+      #55000000
+    )
+    1 100%;
+  border-style: solid;
+  border-width: 0 2px 0 2px;
   h2 {
     color: #fff;
     text-shadow: 0px 0px 10px #000;
@@ -50,14 +66,32 @@ main {
 .filter {
   border-style: solid;
   border-width: 0 2px 0 0;
-  border-image: linear-gradient(to bottom, #550000, #056400, #550000) 1 100%;
+  border-image: linear-gradient(
+      to bottom,
+      #550000,
+      #056400,
+      #056400,
+      #056400,
+      #056400,
+      #550000
+    )
+    1 100%;
   grid-area: filter;
 }
 
 .sort {
   border-style: solid;
   border-width: 0 0 0 0.5px;
-  border-image: linear-gradient(to bottom, #550000, #ffffff85, #550000) 1 100%;
+  border-image: linear-gradient(
+      to bottom,
+      #550000,
+      #000,
+      #000,
+      #000,
+      #000,
+      #550000
+    )
+    1 100%;
   grid-area: sort;
 }
 
