@@ -56,7 +56,10 @@ function App() {
   return (
     <>
       <header>
-        <h1>Array function magic</h1>
+        <h1>
+          {" "}
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Array function magic
+        </h1>
       </header>
       <div className="buttons-block">
         <div className="sort">

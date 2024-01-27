@@ -4,9 +4,12 @@
   padding: 2rem;
   text-align: center;
   cursor: default;
+  scrollbar-width: 30px;
 }
 body {
-  background-color: #7b7b7b;
+  background-image: linear-gradient(#7a7a7ae5, #7a7a7ae5), url(assets/back.jpeg);
+  background-size: 20%;
+  background-attachment: fixed;
 }
 * {
   transition: ease 0.2s;
@@ -37,7 +40,7 @@ main {
 
 .buttons-block {
   box-shadow: 0 5px 15px #000;
-  background-color: #550000;
+  background-color: #7d0000;
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 20px;
@@ -70,12 +73,12 @@ main {
   border-width: 0 2px 0 0;
   border-image: linear-gradient(
       to bottom,
-      #550000,
+      #55000000,
       #056400,
       #056400,
       #056400,
       #056400,
-      #550000
+      #55000000
     )
     1 100%;
   grid-area: filter;
@@ -86,12 +89,12 @@ main {
   border-width: 0 0 0 0.5px;
   border-image: linear-gradient(
       to bottom,
-      #550000,
+      #55000000,
       #000,
       #000,
       #000,
       #000,
-      #550000
+      #55000000
     )
     1 100%;
   grid-area: sort;
@@ -114,12 +117,11 @@ button {
 
 button:hover {
   background-color: black;
-  box-shadow: 0px 0px 10px #ff0000;
+  box-shadow: 0px 0px 10px #000000;
 }
 .button-highlight,
 button:active {
   background-color: black;
-
   scale: 0.9;
   box-shadow: 0px 0px 4px #000000;
 }
