@@ -4,13 +4,14 @@
   width: 200px;
   border-radius: 12px;
   box-shadow: inset #000000 0px 0px 0, #000000 0px 3px 8px;
-  background-color: white;
-  transition: all 0.1s;
+  background-color: rgba(255, 255, 255, 0.458);
+  transition: all 0.1s, background-color 0.2s;
   img {
     border-radius: 10px;
   }
 }
 .card:hover {
+  background-color: rgb(255, 255, 255);
   box-shadow: inset #000000 0px 0px 0, #000000 0px 3px 15px;
 }
 .card:active {

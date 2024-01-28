@@ -1,31 +1,60 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   cursor: default;
-  scrollbar-width: 30px;
 }
+
 body {
   background-image: linear-gradient(#7a7a7ae5, #7a7a7ae5), url(assets/back.jpeg);
   background-size: 20%;
   background-attachment: fixed;
 }
+body::-webkit-scrollbar {
+  top: 2em;
+  width: 10px;
+  background-image: linear-gradient(#7a7a7ae5, #7a7a7ae5), url(assets/back.jpeg);
+}
+body::-webkit-scrollbar-track {
+  top: 2em;
+  background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #056400, #520000f0);
+}
 * {
   transition: ease 0.2s;
+}
+
+header {
+  background-color: #056400;
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  justify-self: stretch;
+  padding-top: 15px;
+  width: 100vw;
+  box-shadow: 0 5px 15px #000;
+  overflow: visible;
+  grid-template-areas:
+    "h1 h1"
+    "buttons-block buttons-block";
 }
 h1 {
   margin-bottom: 12px;
   color: #fff;
   text-shadow: 2px 2px 5px black;
+  grid-area: h1;
 }
 h2 {
   margin-bottom: 12px;
   color: #000;
 }
-
 .card-list {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: center;
   gap: 24px;
@@ -39,15 +68,20 @@ main {
 }
 
 .buttons-block {
+  z-index: 1;
+  margin-top: 6em;
+  position: sticky;
+  grid-area: buttons-block;
+  justify-self: stretch;
   box-shadow: 0 5px 15px #000;
-  background-color: #7d0000;
+  background-color: #520000f0;
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 20px;
   display: grid;
   grid-template-areas:
-    "filter filter filter sort sort sort"
-    "filter filter filter sort sort sort";
+    "filter sort"
+    "filter sort";
   border-image: linear-gradient(
       to bottom,
       #55000000,
